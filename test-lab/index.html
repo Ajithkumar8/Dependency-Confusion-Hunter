@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VulnCorp - Enterprise Application</title>
+  <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <h1>🏢 VulnCorp</h1>
+        <p class="tagline">Enterprise Application Suite</p>
+      </div>
+      <nav class="nav">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#settings">Settings</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="alert alert-info">
+        <strong>🧪 Test Laboratory</strong> - Esta aplicação contém pacotes privados vulneráveis a Dependency Confusion
+      </div>
+
+      <section class="dashboard">
+        <h2>📊 Company Dashboard</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Active Users</h3>
+            <p class="metric">1,234</p>
+            <span class="change positive">↑ 12%</span>
+          </div>
+
+          <div class="card">
+            <h3>Revenue</h3>
+            <p class="metric">$45.6K</p>
+            <span class="change positive">↑ 8%</span>
+          </div>
+
+          <div class="card">
+            <h3>API Calls</h3>
+            <p class="metric">892K</p>
+            <span class="change negative">↓ 3%</span>
+          </div>
+
+          <div class="card">
+            <h3>Server Load</h3>
+            <p class="metric">67%</p>
+            <span class="change neutral">→ 0%</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>🔧 System Features</h2>
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="icon">🔐</span>
+            <div>
+              <h4>Authentication System</h4>
+              <p>Uses internal auth library: <code>vulncorp-auth-service</code></p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span class="icon">📊</span>
+            <div>
+              <h4>Analytics Engine</h4>
+              <p>Powered by: <code>vulncorp-analytics-engine</code></p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span class="icon">💾</span>
+            <div>
+              <h4>Data Processing</h4>
+              <p>Using: <code>internal-data-processor-v2</code></p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span class="icon">🔗</span>
+            <div>
+              <h4>API Client</h4>
+              <p>Connects via: <code>company-private-api-sdk</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logs">
+        <h2>📋 System Logs</h2>
+        <div class="log-container" id="logs">
+          <div class="log-entry">Loading modules...</div>
+        </div>
+      </section>
+
+      <section class="info-box">
+        <h3>ℹ️ Instruções para Teste</h3>
+        <ol>
+          <li>Certifique-se de que a extensão <strong>Dependency Confusion Hunter</strong> está instalada e ativa</li>
+          <li>Abra o console do navegador (F12) para ver os logs</li>
+          <li>Aguarde 5-10 segundos para a extensão analisar a página</li>
+          <li>Clique no ícone da extensão para ver os pacotes detectados</li>
+          <li>Verifique se os pacotes listados abaixo foram encontrados:</li>
+        </ol>
+
+        <div class="expected-findings">
+          <h4>🎯 Pacotes Esperados (devem ser detectados):</h4>
+          <ul>
+            <li><code>vulncorp-auth-service</code> (npm)</li>
+            <li><code>vulncorp-analytics-engine</code> (npm)</li>
+            <li><code>internal-data-processor-v2</code> (npm)</li>
+            <li><code>company-private-api-sdk</code> (npm)</li>
+            <li><code>secret-crypto-lib</code> (npm)</li>
+            <li><code>vulncorp-logger</code> (npm)</li>
+            <li><code>enterprise-cache-manager</code> (npm)</li>
+            <li><code>internal_ml_framework</code> (pip)</li>
+            <li><code>company_data_utils</code> (pip)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>VulnCorp Enterprise © 2024 | Test Lab by OFJAAAH</p>
+      <p class="warning">⚠️ Este é um ambiente de teste. Pacotes listados são fictícios.</p>
+    </footer>
+  </div>
+
+  <!-- Load JavaScript files with vulnerable dependencies -->
+  <script src="static/js/vendor.bundle.js"></script>
+  <script src="static/js/app.bundle.js"></script>
+  <script src="static/js/analytics.js"></script>
+  <script src="static/js/auth.js"></script>
+
+  <script>
+    // Simulate application initialization
+    document.addEventListener('DOMContentLoaded', () => {
+      const logContainer = document.getElementById('logs');
+
+      const logs = [
+        '✅ Loading vulncorp-auth-service v1.2.3...',
+        '✅ Initializing vulncorp-analytics-engine...',
+        '✅ Starting internal-data-processor-v2...',
+        '✅ Connecting to company-private-api-sdk...',
+        '✅ Loading secret-crypto-lib for encryption...',
+        '✅ Initializing vulncorp-logger...',
+        '✅ Starting enterprise-cache-manager...',
+        '✅ Loading Python ML framework: internal_ml_framework...',
+        '✅ Importing company_data_utils...',
+        '🎯 All modules loaded successfully!',
+        '⚠️ Extension should have detected these packages!'
+      ];
+
+      logs.forEach((log, index) => {
+        setTimeout(() => {
+          const entry = document.createElement('div');
+          entry.className = 'log-entry';
+          entry.textContent = log;
+          logContainer.appendChild(entry);
+          logContainer.scrollTop = logContainer.scrollHeight;
+        }, index * 500);
+      });
+    });
+  </script>
+</body>
+</html>

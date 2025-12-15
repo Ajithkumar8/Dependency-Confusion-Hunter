@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dependency Confusion Hunter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎯 Dependency Hunter</h1>
+      <p class="author">by OFJAAAH</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="findings">🔍 Achados Atuais</button>
+      <button class="tab-button" data-tab="history">📜 Histórico</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card vulnerable">
+        <div class="stat-number" id="vulnerableCount">0</div>
+        <div class="stat-label">Vulnerabilidades</div>
+      </div>
+      <div class="stat-card scanned">
+        <div class="stat-number" id="scannedCount">0</div>
+        <div class="stat-label">Arquivos Analisados</div>
+      </div>
+      <div class="stat-card history">
+        <div class="stat-number" id="historyCount">0</div>
+        <div class="stat-label">Histórico Total</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="refreshBtn" class="btn btn-primary">🔄 Atualizar</button>
+      <button id="clearBtn" class="btn btn-secondary">🗑️ Limpar</button>
+      <button id="settingsBtn" class="btn btn-secondary">⚙️ Configurações</button>
+    </div>
+
+    <div id="findingsTab" class="tab-content active">
+      <div class="findings-container">
+        <h2>Pacotes Vulneráveis</h2>
+        <div id="findingsList" class="findings-list">
+          <div class="empty-state">
+            <p>Nenhuma vulnerabilidade encontrada ainda.</p>
+            <p class="help-text">Navegue em sites que usam JavaScript e a extensão irá detectar automaticamente pacotes que não existem publicamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="historyTab" class="tab-content">
+      <div class="findings-container">
+        <h2>Histórico de Detecções</h2>
+        <div class="history-actions">
+          <button id="clearHistoryBtn" class="btn btn-small btn-secondary">🗑️ Limpar Histórico</button>
+          <button id="exportHistoryBtn" class="btn btn-small btn-secondary">📊 Exportar</button>
+        </div>
+        <div id="historyList" class="findings-list">
+          <div class="empty-state">
+            <p>Nenhum histórico disponível.</p>
+            <p class="help-text">O histórico mostra todas as detecções anteriores de pacotes vulneráveis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <input type="text" id="searchInput" placeholder="🔍 Buscar pacotes..." class="search-input">
+      <select id="typeFilter" class="filter-select">
+        <option value="all">Todos os tipos</option>
+        <option value="npm">NPM</option>
+        <option value="pip">PIP</option>
+      </select>
+      <select id="confidenceFilter" class="filter-select">
+        <option value="0">Qualquer confiança</option>
+        <option value="70" selected>≥70% confiança</option>
+        <option value="90">≥90% confiança</option>
+      </select>
+    </div>
+
+    <div class="info-section">
+      <details class="info-details">
+        <summary>ℹ️ Como funciona a detecção</summary>
+        <div class="info-content">
+          <p><strong>Alta confiança (≥90%):</strong> Pacotes encontrados em package.json, lock files, ou com padrão típico de nome npm.</p>
+          <p><strong>Média confiança (70-89%):</strong> Pacotes extraídos de require() ou import com nomes válidos.</p>
+          <p><strong>Baixa confiança (&lt;70%):</strong> Pode ser falso positivo - verifique manualmente.</p>
+          <p class="tip">💡 Dica: Sites como Instagram/Facebook são ignorados por padrão pois geram muitos falsos positivos.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

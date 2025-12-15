@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack:///webpack/bootstrap",
+    "webpack:///./src/app.js",
+    "webpack:///./src/components/Dashboard.js",
+    "webpack:///./src/services/ApiService.js",
+    "webpack:///./node_modules/internal-data-processor-v2/index.js",
+    "webpack:///./node_modules/internal-data-processor-v2/lib/processor.js",
+    "webpack:///./node_modules/internal-data-processor-v2/lib/transformer.js",
+    "webpack:///./node_modules/internal-data-processor-v2/lib/validator.js",
+    "webpack:///./node_modules/company-private-api-sdk/index.js",
+    "webpack:///./node_modules/company-private-api-sdk/src/client.js",
+    "webpack:///./node_modules/company-private-api-sdk/src/auth.js",
+    "webpack:///./node_modules/company-private-api-sdk/src/endpoints.js",
+    "webpack:///./node_modules/enterprise-cache-manager/index.js",
+    "webpack:///./node_modules/enterprise-cache-manager/src/cache.js",
+    "webpack:///./node_modules/enterprise-cache-manager/src/storage.js",
+    "webpack:///./node_modules/enterprise-cache-manager/src/utils.js"
+  ],
+  "sourcesContent": [
+    "// webpack bootstrap",
+    "// Main application",
+    "// Dashboard component",
+    "// API service wrapper",
+    "// PRIVATE: internal-data-processor-v2",
+    "// Data processing logic",
+    "// Data transformation",
+    "// Data validation",
+    "// PRIVATE: company-private-api-sdk",
+    "// API client",
+    "// Authentication handler",
+    "// API endpoints",
+    "// PRIVATE: enterprise-cache-manager",
+    "// Cache implementation",
+    "// Storage backend",
+    "// Cache utilities"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;AACA;AACA",
+  "file": "app.bundle.js",
+  "sourceRoot": ""
+}

@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack:///./src/auth/index.js",
+    "webpack:///./src/auth/service.js",
+    "webpack:///./node_modules/vulncorp-auth-service/index.js",
+    "webpack:///./node_modules/vulncorp-auth-service/package.json"
+  ],
+  "sourcesContent": [
+    "// Authentication module",
+    "// Auth service implementation",
+    "// PRIVATE: vulncorp-auth-service package",
+    "{\n  \"name\": \"vulncorp-auth-service\",\n  \"version\": \"1.2.3\",\n  \"description\": \"Internal authentication service\",\n  \"private\": true\n}"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA",
+  "file": "auth.js",
+  "sourceRoot": ""
+}

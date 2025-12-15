@@ -1,0 +1,136 @@
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║     🎯 DEPENDENCY CONFUSION HUNTER                             ║
+║     Instalação Rápida                                          ║
+║     Autor: OFJAAAH                                             ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+📦 ARQUIVO: dependency-confusion-hunter-v1.0.0.zip
+
+═══════════════════════════════════════════════════════════════
+
+🚀 INSTALAÇÃO RÁPIDA
+
+1. Extrair o ZIP:
+   - Extraia o arquivo ZIP em um local permanente
+   - NÃO delete a pasta após instalar
+
+2. Abrir Chrome:
+   - Digite: chrome://extensions/
+   - Ou: Menu → Mais ferramentas → Extensões
+
+3. Ativar Modo Desenvolvedor:
+   - No canto superior direito
+   - Clique no botão "Modo do desenvolvedor"
+
+4. Carregar Extensão:
+   - Clique em "Carregar sem compactação"
+   - Selecione a pasta extraída
+   - Pronto! A extensão está instalada
+
+═══════════════════════════════════════════════════════════════
+
+⚙️ CONFIGURAÇÃO INICIAL (OPCIONAL)
+
+1. Clique no ícone da extensão
+2. Clique em "⚙️ Configurações"
+3. Configure:
+
+   Discord Webhook (opcional):
+   - Cole a URL do webhook do Discord
+   - Receba alertas em tempo real
+
+   Autenticação NPM (opcional):
+   - Cole seu token npm
+   - Formato: npm_xxxxxxxxxxxx
+   - Para gerar: npm token create --read-only
+
+═══════════════════════════════════════════════════════════════
+
+🧪 TESTAR A EXTENSÃO
+
+Opção 1 - Lab Completo:
+   1. cd test-lab/
+   2. ./start.sh
+   3. Abrir: http://localhost:8080
+   4. Aguardar 5-10 segundos
+   5. Clicar no ícone da extensão
+   6. Deve mostrar 10 pacotes detectados!
+
+Opção 2 - Teste Rápido:
+   1. Abrir: test.html no navegador
+   2. Aguardar alguns segundos
+   3. Verificar extensão
+
+Opção 3 - Sites Reais:
+   - Navegue em qualquer site com JavaScript
+   - A extensão analisa automaticamente
+
+═══════════════════════════════════════════════════════════════
+
+📚 DOCUMENTAÇÃO
+
+- README.md         → Visão geral completa
+- INSTALL.md        → Guia de instalação detalhado
+- EXAMPLES.md       → Exemplos e casos de uso
+- NPM_AUTH.md       → Guia de autenticação npm
+- test-lab/README.md → Documentação do laboratório
+
+═══════════════════════════════════════════════════════════════
+
+🎯 O QUE A EXTENSÃO FAZ
+
+✅ Monitora arquivos JavaScript e .map automaticamente
+✅ Detecta pacotes npm e pip privados
+✅ Verifica se existem em registros públicos
+✅ Alerta sobre vulnerabilidades de Dependency Confusion
+✅ Envia notificações (browser + Discord)
+✅ Interface intuitiva com estatísticas
+
+═══════════════════════════════════════════════════════════════
+
+⚠️ USO RESPONSÁVEL
+
+USE APENAS PARA:
+  ✅ Pentesting autorizado
+  ✅ Análise de segurança defensiva
+  ✅ CTF e competições
+  ✅ Pesquisa e educação
+
+NÃO USE PARA:
+  ❌ Exploração não autorizada
+  ❌ Criação de pacotes maliciosos
+  ❌ Comprometimento de supply chain
+
+═══════════════════════════════════════════════════════════════
+
+🆘 PROBLEMAS?
+
+Extensão não aparece:
+  → Verifique se extraiu o ZIP
+  → Verifique se ativou "Modo do desenvolvedor"
+  → Recarregue a extensão (botão de reload)
+
+Nenhum pacote detectado:
+  → Navegue em sites com JavaScript
+  → Aguarde alguns segundos
+  → Abra o console (F12) e procure logs da extensão
+
+Discord não funciona:
+  → Verifique a URL do webhook
+  → Teste: curl -X POST "URL" -d '{"content":"teste"}'
+
+═══════════════════════════════════════════════════════════════
+
+📞 SUPORTE
+
+GitHub: [seu-repositório]
+Autor: OFJAAAH
+Versão: 1.0.0
+
+═══════════════════════════════════════════════════════════════
+
+🎯 Boa caçada!
+
+Desenvolvido com ❤️ por OFJAAAH

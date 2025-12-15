@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack:///webpack/bootstrap",
+    "webpack:///./src/index.js",
+    "webpack:///./node_modules/vulncorp-auth-service/index.js",
+    "webpack:///./node_modules/vulncorp-auth-service/lib/jwt.js",
+    "webpack:///./node_modules/vulncorp-auth-service/lib/validator.js",
+    "webpack:///./node_modules/vulncorp-analytics-engine/index.js",
+    "webpack:///./node_modules/vulncorp-analytics-engine/src/tracker.js",
+    "webpack:///./node_modules/vulncorp-analytics-engine/src/metrics.js",
+    "webpack:///./node_modules/secret-crypto-lib/index.js",
+    "webpack:///./node_modules/secret-crypto-lib/lib/encrypt.js",
+    "webpack:///./node_modules/secret-crypto-lib/lib/hash.js",
+    "webpack:///./node_modules/vulncorp-logger/index.js",
+    "webpack:///./node_modules/vulncorp-logger/src/logger.js",
+    "webpack:///./node_modules/vulncorp-logger/src/formatters.js"
+  ],
+  "sourcesContent": [
+    "// webpack bootstrap code",
+    "// Main application entry",
+    "// vulncorp-auth-service package (PRIVATE)",
+    "// JWT utilities",
+    "// Token validation",
+    "// Analytics engine (PRIVATE)",
+    "// Event tracking",
+    "// Metrics collection",
+    "// Crypto library (PRIVATE)",
+    "// Encryption utilities",
+    "// Hashing functions",
+    "// Logger package (PRIVATE)",
+    "// Logging implementation",
+    "// Log formatters"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA",
+  "file": "vendor.bundle.js",
+  "sourceRoot": ""
+}

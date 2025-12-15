@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page for Dependency Hunter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #ff4444;
+    }
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    .warning {
+      background: #fff3cd;
+      border-left: 4px solid #ffeb3b;
+      padding: 12px;
+      margin: 10px 0;
+    }
+    .info {
+      background: #e3f2fd;
+      border-left: 4px solid #2196F3;
+      padding: 12px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎯 Dependency Confusion Hunter - Test Page</h1>
+    <p>Esta página contém referências a pacotes que podem não existir publicamente, para testar a extensão.</p>
+
+    <div class="warning">
+      <strong>⚠️ Aviso:</strong> Esta é uma página de teste. Os pacotes referenciados podem ou não existir.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📦 Pacotes de Teste</h2>
+    <p>Esta página simula o uso de pacotes internos que podem ser vulneráveis:</p>
+    <ul>
+      <li><code>company-internal-auth-utils</code> - Pacote de autenticação interno</li>
+      <li><code>private-api-client-sdk</code> - SDK privado de API</li>
+      <li><code>internal-logging-framework</code> - Framework de logging</li>
+      <li><code>custom-data-processor</code> - Processador de dados customizado</li>
+    </ul>
+  </div>
+
+  <div class="card info">
+    <h3>ℹ️ Como testar</h3>
+    <ol>
+      <li>Certifique-se de que a extensão está instalada e ativada</li>
+      <li>Abra esta página no Chrome</li>
+      <li>Aguarde alguns segundos para a extensão analisar</li>
+      <li>Clique no ícone da extensão para ver os resultados</li>
+      <li>Verifique se os pacotes listados acima foram detectados</li>
+    </ol>
+  </div>
+
+  <script>
+    // Simulação de código que usa pacotes privados
+    // Estes pacotes provavelmente não existem no npm público
+
+    // Exemplo 1: require style
+    // const auth = require('company-internal-auth-utils');
+
+    // Exemplo 2: import style
+    // import { apiClient } from 'private-api-client-sdk';
+
+    // Exemplo 3: dynamic import
+    // const logger = await import('internal-logging-framework');
+
+    // Exemplo 4: código inline com referências
+    const packageInfo = {
+      dependencies: {
+        "company-internal-auth-utils": "^1.0.0",
+        "private-api-client-sdk": "^2.3.1",
+        "internal-logging-framework": "^0.5.0",
+        "custom-data-processor": "^3.1.4"
+      }
+    };
+
+    // Simulação de uso de node_modules
+    // Normalmente isso não apareceria em código frontend, mas pode aparecer em source maps
+    const modulePath = 'node_modules/company-internal-auth-utils/dist/index.js';
+
+    console.log('Test page loaded. Extension should detect these packages.');
+    console.log('Package info:', packageInfo);
+    console.log('Module path:', modulePath);
+
+    // Adicionar código que simula imports
+    const fakeCode = `
+      import { authenticate } from 'company-internal-auth-utils';
+      import { fetchData } from 'private-api-client-sdk';
+      import { log } from 'internal-logging-framework';
+      import { process } from 'custom-data-processor';
+    `;
+
+    // Log para o console (a extensão monitora isso)
+    console.log('Simulated code:', fakeCode);
+  </script>
+
+  <script>
+    // Script adicional com mais referências
+    (function() {
+      // Simular webpack require
+      function __webpack_require__(moduleId) {
+        // node_modules/company-internal-auth-utils/index.js
+        // node_modules/private-api-client-sdk/main.js
+        return {};
+      }
+
+      // Python-style imports (caso a extensão detecte)
+      const pythonCode = `
+        import internal_company_package
+        from private_ml_framework import train_model
+        import custom_data_utils
+      `;
+
+      console.log('Python simulation:', pythonCode);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack:///./src/analytics/index.js",
+    "webpack:///./src/analytics/tracker.js",
+    "webpack:///./src/analytics/ml-client.js",
+    "webpack:///./backend/python/ml_service.py",
+    "webpack:///./backend/python/requirements.txt"
+  ],
+  "sourcesContent": [
+    "// Analytics module main entry",
+    "// Event tracking implementation",
+    "// ML backend client",
+    "# Python ML Service\n# Uses: internal_ml_framework, company_data_utils, vulncorp_ml_models\nimport internal_ml_framework\nfrom company_data_utils import preprocess_data\nfrom vulncorp_ml_models import PredictionModel",
+    "# Python dependencies\ninternal_ml_framework==2.1.0\ncompany_data_utils==1.5.3\nvulncorp_ml_models==0.8.2"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;AACA",
+  "file": "analytics.js",
+  "sourceRoot": ""
+}

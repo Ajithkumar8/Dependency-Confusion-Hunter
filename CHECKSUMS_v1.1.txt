@@ -1,0 +1,2 @@
+4b387b7a90db2849df6df5f68b7505097c5b5033afbc51d4b2ed9f99244c09ec  dependency-confusion-hunter-FULL-v1.1.0.zip
+135ffbe90efb830d0b0e483399b95dca93921f5f4fb0cb0309808c48ea20957d  dependency-confusion-hunter-v1.1.0.zip
